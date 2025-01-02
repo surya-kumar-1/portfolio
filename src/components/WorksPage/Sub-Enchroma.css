@@ -1,0 +1,25 @@
+.custom-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .custom-gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .custom-gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .custom-gallery-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

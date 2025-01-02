@@ -1,0 +1,56 @@
+.marque {
+    border: 2px solid transparent; /* No visible border */
+    height: 100px; /* Default height for larger screens */
+    display: flex;
+    align-items: center;
+    background-color: #CDBFA4;
+    overflow: hidden; /* Ensures marquee stays within container */
+    margin-bottom: 6em;
+}
+
+.text-mark {
+    font-size: 24px; /* Default font size for larger screens */
+    font-style: italic;
+    color: white;
+    white-space: nowrap; /* Prevents wrapping of text */
+}
+
+/* Responsive Adjustments */
+
+/* For tablets and smaller laptops (under 1024px) */
+@media (max-width: 1024px) {
+    .marque {
+        height: 80px; /* Reduced height for medium screens */
+    }
+    .text-mark {
+        font-size: 20px; /* Slightly smaller font size */
+    }
+}
+
+/* For medium-sized mobile screens (under 768px) */
+@media (max-width: 768px) {
+    .marque {
+        height: 60px; /* Reduced height for small screens */
+    }
+    .text-mark {
+        font-size: 18px; /* Smaller font for mobile devices */
+    }
+    .marque{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
+/* For small mobile screens (under 480px) */
+@media (max-width: 480px) {
+    .marque {
+        height: 50px; /* Further reduced height for tiny screens */
+    }
+    .text-mark {
+        font-size: 16px; /* Further reduced font size */
+    }
+    .marque{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}

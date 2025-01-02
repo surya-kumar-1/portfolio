@@ -1,0 +1,222 @@
+.navbar {
+    border: 2px solid rgb(199, 199, 199);
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent; /* Ensure the background is transparent */
+    box-shadow: 0 4px 6px rgba(143, 142, 142, 0.1);
+}
+/* Remove underline from links */
+.navbar a {
+    text-decoration: none;
+    color: inherit; /* Keeps the text color consistent with the surrounding context */
+}
+.kumareh{
+    color: #324169;
+    font-weight: bold;
+}
+/* Add hover effect if needed */
+.navbar a:hover {
+    text-decoration: none; /* Ensures underline does not appear on hover */
+    color: blueviolet; /* Optional: Change text color on hover for a visual cue */
+}
+
+.text-1{
+    font-size: 1.7em;
+    font-weight: 400;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Light white overlay */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: -1; /* Make sure it stays behind the content */
+}
+
+.Navlogo h3,
+.rightside-content,
+.hamburger {
+    position: relative; /* Ensure they stay above the blurred background */
+    z-index: 1; /* Keep content above the blurred background */
+}
+
+
+/* Add a top margin to the next section to prevent it from being covered */
+body {
+    margin-top: 5em; /* Same as navbar height */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Right-side content */
+.rightside-content {
+    display: flex;
+    gap: 5em;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Horizontally aligned content for screens above 1000px */
+.rightside-content ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+/* Individual list item styling */
+.rightside-content ul li {
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Dropdown icon styling */
+.rightside-content ul li i {
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown container */
+.dropdown-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 300px; /* Adjust the max height for more content */
+    overflow-y: auto; /* Make dropdown scrollable */
+}
+
+/* Show dropdown on hover */
+.rightside-content ul li:hover .dropdown-container,
+.dropdown-container:hover {
+    display: flex;
+}
+
+/* Rotate dropdown icon on hover */
+.rightside-content ul li:hover i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Styling for dropdown items */
+.dropdown-container div {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-container div:last-child {
+    border-bottom: none;
+}
+
+.dropdown-container div:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+
+/* Styling for contact arrow */
+.contact-arrow {
+    font-size: 15px;
+    margin-left: 0.5em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 0 2em;
+    }
+
+    .l-3{
+        margin-top: 2em;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+    }
+
+    .rightside-content {
+        border: 2px solid rgb(216, 216, 216);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f8f8f8;
+        max-height: 0; /* Collapsed by default */
+        overflow: hidden;
+        opacity: 0;
+        z-index: 10;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        
+    }
+
+    .rightside-content.show {
+        max-height: 100vh; /* Expand fully */
+        opacity: 1;
+        overflow-y: auto; /* Enable scrolling */
+    }
+
+    .rightside-content ul {
+        flex-direction: column; /* Stacked vertically for smaller screens */
+        gap: 12em;
+        padding: 1em;
+    }
+
+    .contact-text {
+        margin-top: -9.5em;
+    }
+
+    /* Fix dropdown visibility when hamburger is clicked */
+    .dropdown-container {
+        display: flex !important;
+        max-height: 300px !important; /* Adjusted height for dropdown */
+        overflow-y: auto; /* Enable scrolling for dropdown */
+        
+    }
+    .dropdown{
+        margin-top: -9em;
+    }
+    
+    .l-4{
+        margin-top: -9em;
+    }
+}
+
+@media (max-width:400px){
+    .text-1{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:350px){
+    .text-1{
+        font-size: 1.2em;
+    }
+}

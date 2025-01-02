@@ -1,0 +1,166 @@
+.aboutmemain {
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    justify-content: center;
+    align-items: center;
+    /* padding: 1em; */
+    
+}
+
+.about-content {
+    border: 2px solid none;
+    width: 50%; /* 50% width for larger screens */
+    text-align: justify;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em; /* Spacing between items */
+}
+
+.main-cta-sidebox {
+    width: 50%; /* 50% width for larger screens */
+    display: flex;
+    justify-content: center;
+    margin: 1em; /* Spacing between items */
+}
+
+.cta-sidebox {
+    border: 2px solid none;
+    height: 400px;
+    width: 100%; /* Ensures it scales with the container */
+    max-width: 400px; /* Restricts max width */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-image: url('../src/assets/ab-pro-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutcontent-2 {
+    border: 2px solid none;
+    width: 80%; /* Restricts content width for better readability */
+    padding: 1em;
+}
+
+.cta-text-about {
+    
+    font-size: 2.3em;
+    /* text-align: center; Centers the heading */
+    margin-bottom: 1em; /* Adds spacing below the heading */
+}
+
+.cta-para-1,
+.cta-para-2,
+.cta-para-3 {
+    margin-top: 1em;
+}
+
+.cta-para-3{
+    margin-bottom: 1em;
+}
+
+.btn-cv {
+    margin-top: 2em;
+    padding: 10px 20px; /* Better padding for easier tap */
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-cv:hover {
+    background-color: rgb(225, 219, 231);
+    transition: 0.7s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .aboutmemain {
+        margin-top: 10em;
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+    }
+
+    .about-content, .main-cta-sidebox {
+        width: 100%; /* Use full width for smaller screens */
+    }
+
+    .cta-sidebox {
+        height: 300px; /* Adjust height for smaller screens */
+        background-size: 18em;
+    }
+
+    .cta-text-about {
+        font-size: 2em; /* Reduce font size on smaller screens */
+    }
+    .aboutmemain{
+        margin-top: 15em;
+    }
+}
+@media (max-width: 573px){
+    .aboutmemain{
+        margin-top: 19em;
+    }
+}
+@media (max-width: 480px) {
+    .cta-text-about {
+        font-size: 1.8em; /* Further reduce font size for very small screens */
+    }
+
+    .aboutcontent-2 {
+        padding: 0.5em; /* Reduce padding for better fit */
+    }
+
+    .btn-cv {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+    .aboutmemain{
+        margin-top: 20em;
+    }
+    .about-profile{
+        height: 18em;
+        margin-left: 3em;
+    }
+    .cta-sidebox{
+        background-size: 17em;
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    .aboutmemain{
+        margin-top: 24em;
+    }
+}
+
+/* @media (max-width: 400px){
+    .cta-para-1,
+    .cta-para-2,
+    .cta-para-3 {
+        font-size: 0.9em;
+        line-height: 1.8em;
+}
+} */
+
+@media (max-width: 393px) {
+    .aboutmemain{
+        margin-top: 26em;
+    }
+    .cta-sidebox{
+        background-size: 17em;
+    }
+}
+@media (max-width: 360px) {
+    .aboutmemain{
+        margin-top: 28em;
+    }
+}
+
+@media (max-width: 340px){
+    .aboutmemain{
+        margin-top: 30em;
+    }
+}

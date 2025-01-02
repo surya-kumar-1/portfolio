@@ -1,0 +1,101 @@
+.about {
+    border: 3px solid e8decd;
+    height: 100vh;
+    background-color: #e8decd;
+    margin-top: -4.1em;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 1em; /* Add padding for better layout on small screens */
+    background-image: url('../src/assets/abbb.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-text {
+    font-size: 10em; /* Adjusted for larger screens */
+    margin: 10px 0; /* Add spacing around the text */
+    text-align: center;
+    font-family: Glitther Syavina;
+    color: #3a5653;
+}
+
+.cno-cont {
+    border: 1px solid white;
+    width: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Adjust padding for better spacing */
+    gap: 10px; /* Space between the words */
+    border-radius: 50px; /* Rounded corners */
+    background-color: rgb(255, 255, 126);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better separation */
+}
+
+.cno-cont p {
+    font-size: 1em; /* Adjust font size */
+}
+
+.inner-cont {
+    border: 2px solid #e8decd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em; /* Add space between elements */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .about-text {
+        font-size: 8em; /* Reduce size for tablets */
+    }
+
+    .cno-cont {
+        width: 14em; /* Adjust width */
+        padding: 8px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 2em; /* Add more padding */
+    }
+
+    .about-text {
+        font-size: 6em; /* Reduce font size for smaller screens */
+    }
+
+    .cno-cont {
+        width: 15em; /* Adjust width */
+        padding: 6px; /* Adjust padding */
+    }
+
+    .cno-cont p {
+        font-size: 0.8em; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text {
+        font-size: 4em; /* Reduce font size for mobile screens */
+    }
+
+    .cno-cont {
+        width: 12em; /* Further adjust width */
+        padding: 5px; /* Adjust padding */
+        gap: 5px; /* Reduce gap */
+    }
+
+    .cno-cont p {
+        font-size: 0.7em; /* Further reduce font size */
+    }
+    .about{
+        background-image: url('../src/assets/abbb-2.png');
+        background-position: center;
+        background-size: cover;
+    }
+}

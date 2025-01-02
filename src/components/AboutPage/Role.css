@@ -1,0 +1,140 @@
+.role {
+    border: 2px solid none;
+    height: auto; /* Adjust height for responsive design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.line-design {
+    display: flex;
+    border-radius: 10px;
+    height: 4.5em;
+    width: 5px;
+    background-color: bisque;
+}
+
+.ind-1 {
+    height: 2em;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.innerroles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-texts-1 {
+    margin-left: 2em;
+    font-size: 1rem; /* Default font size */
+}
+
+.line-design-2,
+.line-design-3 {
+    border-radius: 10px;
+    height: 4.5em;
+    width: 5px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    border: 2px solid none;
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .inner-container {
+        width: 80%; /* Adjust width for medium screens */
+    }
+
+    .inner-texts-1 {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .line-design, .line-design-2, .line-design-3 {
+        height: 4em; /* Adjust height for medium screens */
+    }
+
+    .ind-1 {
+        height: 1.8em; /* Adjust indicator height */
+    }
+}
+
+/* For medium mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .role{
+        margin-top: 8em;
+    }
+    .inner-container {
+        width: 90%; /* Further reduce width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .inner-texts-1 {
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .line-design, .line-design-2, .line-design-3 {
+        height: 3.5em; /* Adjust line height */
+    }
+
+    .ind-1 {
+        height: 1.5em; /* Adjust indicator height */
+    }
+    .role{
+        margin-top: 22em;
+    }
+}
+
+/* For small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .inner-container {
+        width: 100%; /* Full width for smallest screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .inner-texts-1 {
+        font-size: 0.7rem; /* Smallest font size for texts */
+    }
+
+    .line-design, .line-design-2, .line-design-3 {
+        height: 3em; /* Further reduce line height */
+    }
+
+    .ind-1 {
+        height: 1.2em; /* Smallest indicator height */
+    }
+    .role{
+        margin-top: 20em;
+    }
+    
+}
+@media (max-width: 400px) {
+    .role{
+        margin-top: 25em;
+    }
+}
+@media (max-width: 380px) {
+    .role{
+        margin-top: 26em;
+    }
+}
+@media (max-width: 357px) {
+    .role{
+        margin-top: 29em;
+        padding: 0;
+        margin-left: 1em;
+    }
+}

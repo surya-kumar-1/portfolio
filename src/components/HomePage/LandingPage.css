@@ -1,0 +1,286 @@
+.LandingPort {
+    font-family: "Poppins", sans-serif;
+    font-size: 80px; /* Default font size for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: capitalize; /* First letter uppercase, rest lowercase */
+    background: #f5f5f5;
+    letter-spacing: 0.1em;
+    margin-top: -1em;
+}
+
+.LandingPort h1 {
+    font-weight: bold;
+    background: linear-gradient(to top, #b1ccde 0%, #314756 100%); /* Updated gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center; /* Aligns text and custom toggle vertically */
+    line-height: 1; /* Adjusts spacing for better alignment */
+    margin: 0;
+}
+
+.custom-o {
+    display: flex;
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+    width: 12vw; /* Increased size for the toggle */
+    height: 6vw;
+    position: relative;
+    margin: 0 5px -23px; /* Adjust spacing between letters */
+}
+
+.toggle-svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.toggle-svg circle {
+    transition: cx 0.5s ease-in-out; /* Smooth animation on page load */
+}
+
+/* Animation to move the circle */
+.toggle-svg:not(.stop-animation) circle {
+    animation: move-circle 0.5s ease-in-out forwards;
+}
+
+/* Keyframes for the animation */
+@keyframes move-circle {
+    from {
+        cx: 25;
+    }
+    to {
+        cx: 75;
+    }
+}
+
+.n {
+    text-transform: lowercase;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller laptops (under 1024px) */
+@media (max-width: 1024px) {
+    .LandingPort {
+        font-size: 60px; /* Adjusted font size for tablets */
+    }
+    .custom-o {
+        width: 13vw; /* Slightly increase toggle size */
+        height: 7vw;
+    }
+}
+
+/* For medium-sized mobile screens (under 770px) */
+@media (max-width: 770px) {
+    .LandingPort {
+        font-size: 45px; /* Reduced font size for better readability */
+    }
+    .custom-o {
+        width: 14vw; /* Slightly increased toggle size */
+        height: 8vw;
+        margin: 0 3px -12px; /* Adjust spacing between letters */
+    }
+}
+
+/* For small mobile screens (under 480px) */
+@media (max-width: 480px) {
+    .LandingPort {
+        font-size: 35px; /* Further reduced font size for tiny screens */
+        padding: 0 20px; /* Added padding to increase space on the left and right */
+    }
+    .custom-o {
+        width: 16vw; /* Increased toggle size proportionally */
+        height: 9vw;
+        margin: 0 3px -10px; /* Compact spacing */
+    }
+}
+
+/* For small mobile screens (under 440px) */
+@media (max-width: 440px) {
+    .LandingPort {
+        font-size: 30px; /* Slightly reduced font size for screens under 440px */
+    }
+    .custom-o {
+        width: 16vw; /* Increased toggle size proportionally */
+        height: 9vw;
+        margin: 0 3px -10px; /* Compact spacing */
+    }
+}
+
+/* For very small screens (under 370px) */
+@media (max-width: 370px) {
+    .LandingPort {
+        font-size: 25px; /* Further reduced font size for screens under 370px */
+    }
+    .custom-o {
+        width: 18vw; /* Slightly increased toggle size for very small screens */
+        height: 10vw;
+        margin: 0 3px -8px; /* Compact spacing */
+    }
+}
+
+
+
+
+
+
+.animation-images {
+    position: absolute;
+    top: 5%; /* Slightly down from the top */
+    left: 5%; /* Slightly away from the left edge */
+    z-index: 1; /* Ensures it's above the background but below main content */
+}
+
+.ani-image-1 img {
+    width: 220px; /* Default size for larger screens */
+    animation: float 3s ease-in-out infinite; /* Smooth up-and-down animation */
+}
+
+/* Keyframes for up-and-down animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Moves up slightly */
+    }
+}
+
+/* Responsive Adjustments */
+
+/* For tablets and smaller laptops (under 1024px) */
+@media (max-width: 1024px) {
+    .ani-image-1 img {
+        width: 120px; /* Slightly smaller image size */
+    }
+    .animation-images {
+        top: 6%; /* Adjust top position */
+        left: 6%; /* Adjust left position */
+    }
+}
+
+/* For medium-sized mobile screens (under 770px) */
+@media (max-width: 770px) {
+    .ani-image-1 img {
+        width: 100px; /* Further reduce image size */
+    }
+    .animation-images {
+        top: 8%; /* Adjust top position */
+        left: 8%; /* Adjust left position */
+    }
+}
+
+/* For small mobile screens (under 480px) */
+@media (max-width: 480px) {
+    .ani-image-1 img {
+        width: 11em; /* Smallest size for tiny screens */
+    }
+    .animation-images {
+        top: 24%; /* Adjust top position */
+        left: -8em; /* Adjust left position */
+    }
+}
+
+.ani-image-2 img {
+    margin-left: 13em; /* Default margin for larger screens */
+    margin-top: 0.5em;
+    width: 290px; /* Default size for larger screens */
+    animation: float 3s ease-in-out infinite;
+}
+@media (max-width: 1400px) {
+    .ani-image-2 img {
+        margin-left: 10em; /* Adjust margin for smaller screens */
+        margin-top: 1em; /* Slightly adjust top margin */
+        width: 220px; /* Adjust width for tablets */
+    }
+}
+/* For tablets and smaller laptops (under 1024px) */
+@media (max-width: 1024px) {
+    .ani-image-2 img {
+        margin-left: 10em; /* Adjust margin for smaller screens */
+        margin-top: 1em; /* Slightly adjust top margin */
+        width: 220px; /* Adjust width for tablets */
+    }
+}
+
+/* For medium-sized mobile screens (under 770px) */
+@media (max-width: 770px) {
+    .ani-image-2 img {
+        margin-left: 7em; /* Further adjust margin for medium screens */
+        margin-top: 1.5em; /* Adjust top margin */
+        width: 180px; /* Reduce image size for smaller screens */
+    }
+}
+
+/* For small mobile screens (under 480px) */
+@media (max-width: 480px) {
+    .ani-image-2 img {
+        margin-left: 10em; /* Reduce left margin */
+        margin-top: 2em; /* Adjust top margin for small screens */
+        width: 230px; /* Smaller image for mobile screens */
+    }
+}
+
+/* For very small screens (under 370px) */
+@media (max-width: 370px) {
+    .ani-image-2 img {
+        margin-left: 10em; /* Even further reduce left margin */
+        margin-top: 4.8em; /* Adjust top margin for very small screens */
+        width: 210px; /* Smallest image size */
+    }
+}
+
+
+
+
+
+.ani-image-3 {
+    margin-left: 16em; /* Default margin for larger screens */
+    margin-top: -5em; /* Default top margin for larger screens */
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@media (max-width: 1400px) {
+    .ani-image-3 {
+        margin-left: 12em; /* Adjust margin for smaller screens */
+        margin-top: -4em; /* Adjust top margin */
+    }
+}
+
+/* For tablets and smaller laptops (under 1024px) */
+@media (max-width: 1024px) {
+    .ani-image-3 {
+        margin-left: 12em; /* Adjust margin for smaller screens */
+        margin-top: -4em; /* Adjust top margin */
+    }
+}
+
+/* For medium-sized mobile screens (under 770px) */
+@media (max-width: 770px) {
+    .ani-image-3 {
+        margin-left: 8em; /* Further adjust margin */
+        margin-top: -3em; /* Adjust top margin for medium screens */
+    }
+}
+
+/* For small mobile screens (under 480px) */
+@media (max-width: 480px) {
+    .ani-image-3 {
+        margin-left: 15em; /* Reduce left margin for small screens */
+        margin-top: -7em; /* Adjust top margin */
+    }
+}
+
+/* For very small screens (under 370px) */
+@media (max-width: 370px) {
+    .ani-image-3 {
+        margin-left: 13em; /* Reduce left margin for small screens */
+        margin-top: -8em; /* Adjust top margin */
+    }
+}
+

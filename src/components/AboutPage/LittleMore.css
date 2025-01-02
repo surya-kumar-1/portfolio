@@ -1,0 +1,116 @@
+.littlemore {
+    border: 2px solid none;
+    height: 90vh;
+    display: flex;
+}
+
+/* Default horizontal layout for larger screens */
+.little-img-section {
+    border: 2px solid none;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.little-contant {
+    border: 2px solid none;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-l {
+    border: 2px solid none;
+    height: 400px;
+    width: 100%; /* Ensures it scales with the container */
+    max-width: 400px;
+    background-image: url('../src/assets/DESIGN.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+
+}
+
+.littlecontentinner {
+    width: 70%;
+    text-align: justify;
+}
+
+.lp-1 {
+    margin-top: 1em;
+    line-height: 1.7em;
+}
+
+.lp-2 {
+    margin-top: 1em;
+}
+
+/* Responsive Design */
+
+/* For medium screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .littlemore {
+        height: auto; /* Allow dynamic height adjustment */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .little-img-section, .little-contant {
+        width: 100%; /* Full width for each section */
+        height: auto; /* Allow sections to resize dynamically */
+    }
+
+    .img-l {
+        height: 300px; /* Adjust image size for smaller screens */
+        width: 300px;
+    }
+
+    .littlecontentinner {
+        width: 80%; /* Adjust content width */
+    }
+
+    .lp-1, .lp-2 {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+}
+
+/* For small mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .littlemore {
+        padding: 15px; /* Add padding for spacing */
+    }
+
+    .img-l {
+        height: 300px; /* Further reduce image size */
+        /* width: 85%; */
+        margin-bottom: 2em;
+    }
+
+    .littlecontentinner {
+        width: 90%; /* Further adjust content width */
+    }
+
+    .lp-1, .lp-2 {
+        font-size: 0.8rem; /* Smaller text size */
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    
+
+    .img-l {
+        /* height: 350px; Further reduce image size */
+        width: 86%;
+        margin-bottom: 3em;
+    }
+
+    .lp-1, .lp-2 {
+        font-size: 1em; /* Smallest text size for small screens */
+    }
+}
+
+

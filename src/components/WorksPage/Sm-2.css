@@ -1,0 +1,84 @@
+.main-cont {
+    border: 2px solid none;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 5em;
+}
+
+.cards {
+    border: 2px solid none;
+    width: 35%; /* Two cards per row */
+    height: auto;
+    padding: 2em;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover {
+    border: 2px solid black;
+    transform: translateY(-5px);
+}
+
+.img-cont {
+    border: 2px solid none;
+    height: 570px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.inner-content {
+    padding: 0.6em;
+}
+
+.smt-1 {
+    margin-top: 0.4em;
+    margin-bottom: 0.9em;
+    color: rgb(0, 115, 255);
+    font-size: 0.9em;
+}
+.smt-2{
+    font-size: 1.3em;
+}
+.smt-3 {
+    margin-top: 0.9em;
+    margin-bottom: 0.4em;
+    font-size: 0.9em;
+}
+.smt-4{
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design --- */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+    .cards {
+        width: 48%; /* Adjust for smaller screens */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .cards {
+        width: 100%; /* Single card per row on smaller devices */
+    }
+
+    .img-cont {
+        height: 23em; /* Adjust image height for smaller screens */
+    }
+}

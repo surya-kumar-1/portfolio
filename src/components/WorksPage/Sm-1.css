@@ -1,0 +1,93 @@
+.main-content {
+    margin-top: 5.2em;
+    border: 2px solid none;
+    height: 69vh;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Default layout */
+}
+
+.innerehh {
+    border: 2px solid none;
+    width: 50%;
+}
+
+.prev-text {
+    margin-top: 1.5em;
+}
+
+.btn-work {
+    margin-top: 7em;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.btn-work:hover {
+    background-color: rgb(243, 233, 253);
+}
+
+.animate {
+    width: 60em;
+    border: 2px solid none;
+    background-image: url('https://media.tenor.com/bhh8ONgUSjYAAAAi/anime.gif');
+    background-repeat: no-repeat;
+    background-size: 15em;
+}
+
+.innerehh {
+    display: flex;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 2em;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .innerehh {
+        width: 100%; /* Use full width */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .animate {
+        width: 100%; /* Adjust width for smaller screens */
+        background-size: 12em; /* Adjust background size */
+        margin-top: 2em; /* Add spacing between elements */
+    }
+
+    .btn-work {
+        margin-top: 2em; /* Reduce margin on smaller screens */
+        padding: 8px 12px; /* Adjust padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1.5em;
+    }
+
+    .animate {
+        background-size: 10em; /* Further reduce background size */
+    }
+
+    .btn-work {
+        padding: 6px 10px; /* Smaller padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .prev-text {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .intro {
+        font-size: 1.2rem; /* Adjust intro text size */
+    }
+
+    
+}
