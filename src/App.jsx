@@ -21,7 +21,7 @@ function App() {
             <Navbar />
             <Routes>
                 {/* Route for Home */}
-                <Route path="/" element={
+                <Route path="/portfolio" element={
                     <>
                         <LandingPage />
                         <Lama
