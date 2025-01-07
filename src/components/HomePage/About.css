@@ -18,7 +18,7 @@
     align-items: center;
     min-height: 200px;
     justify-content: space-between; /* Ensure content is spread */
-    background-image: url('../src/assets/pngtree.png');
+    background-image: url('portfolio/assets/pngtree.png');
     background-position:right;
     background-size: 17em;
     background-repeat: no-repeat;

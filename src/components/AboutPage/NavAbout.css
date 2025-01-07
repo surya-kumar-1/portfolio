@@ -8,7 +8,7 @@
     justify-content: center; /* Center children vertically */
     align-items: center; /* Center children horizontally */
     padding: 1em; /* Add padding for better layout on small screens */
-    background-image: url('../src/assets/abbb.png');
+    background-image: url('assets/abbb.png');
     background-position: center;
     background-size: cover;
 }
@@ -94,7 +94,7 @@
         font-size: 0.7em; /* Further reduce font size */
     }
     .about{
-        background-image: url('../src/assets/abbb-2.png');
+        background-image: url('assets/abbb-2.png');
         background-position: center;
         background-size: cover;
     }

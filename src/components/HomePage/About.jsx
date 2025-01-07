@@ -8,7 +8,7 @@ function About(){
             <div className='innerlayer'>
                     <div>
                         <h1 className='text-about'>About Me</h1>
-                        <Link to='/about'><button className='learn-btn'>Learn More</button></Link>
+                        <Link to='about'><button className='learn-btn'>Learn More</button></Link>
                     </div>
             </div>
             

@@ -28,7 +28,7 @@
     height: 400px;
     width: 100%; /* Ensures it scales with the container */
     max-width: 400px;
-    background-image: url('../src/assets/DESIGN.png');
+    background-image: url('assets/DESIGN.png');
     background-size: cover;
     background-position: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);

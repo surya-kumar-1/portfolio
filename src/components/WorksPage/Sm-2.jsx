@@ -31,8 +31,8 @@ function Smtwo() {
             description:"Design Expertise: Crafting engaging posts, banners, and stories tailored to your brand identity. Brand Growth: Helping businesses boost social media engagement and follower retention. ",
             additionalInfo:
                 "Custom Solutions: Delivering tailored designs for Instagram, Facebook, LinkedIn, and more.",
-            route: "/second-card", // Route for the first card
-            image : '../src/assets/MODERN-HOME.jpg',
+            route: "second-card", // Route for the first card
+            image : 'assets/MODERN-HOME.jpg',
         },
         {
             subTitle: "Graphic Design | Creative Layouts | Visual Storytelling | Poster design",
@@ -41,8 +41,8 @@ function Smtwo() {
                 "Creative Expertise: Specializing in graphic design for social media, branding, and digital platforms. User-Centric Approach: Crafting designs that align with brand identity and resonate with target audiences.",
             additionalInfo:
                 "Professional Impact: Delivering creative solutions that enhance engagement and brand recognition.",
-            route: "/first-card", // Route for the second card
-            image : '../src/assets/poster.jpg',
+            route: "first-card", // Route for the second card
+            image : 'assets/poster.jpg',
         },
     ];
 

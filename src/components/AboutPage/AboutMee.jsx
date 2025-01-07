@@ -24,14 +24,14 @@ function AboutMee() {
                             and I'm always eager to connect with others in the industry who share the same passion.
                         </p>
                         {/* Add an anchor tag for the CV download */}
-                        <a className='btn-cv' href="../src/assets/cv-22.pdf" download="My_CV.pdf">
+                        <a className='btn-cv' href="assets/cv-22.pdf" download="My_CV.pdf">
                             Download CV
                         </a>
                     </div>
                 </div>
                 <div className='main-cta-sidebox'>
                     <div className='cta-sidebox'>
-                        {/* <img className='about-profile' src="../src/assets/ab-pro-1.png" alt="" /> */}
+                        {/* <img className='about-profile' src="assets/ab-pro-1.png" alt="" /> */}
                     </div>
                 </div>
             </div>

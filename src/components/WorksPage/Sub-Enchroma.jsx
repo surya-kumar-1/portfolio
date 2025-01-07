@@ -2,10 +2,10 @@ import React from 'react';
 import './Sub-Enchroma.css';
 
 const imageUrls = [
-  '../src/assets/sm-image-1.jpg',
-  '../src/assets/sm-image-2.jpg',
-  '../src/assets/sm-image-3.jpg',
-  '../src/assets/sm-image-4.jpg',
+  'assets/sm-image-1.jpg',
+  'assets/sm-image-2.jpg',
+  'assets/sm-image-3.jpg',
+  'assets/sm-image-4.jpg',
 ];
 
 function SubSmImages() {

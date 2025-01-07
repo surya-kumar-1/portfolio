@@ -5,42 +5,42 @@ const illustrationItems = [
   {
     title: "Kitten: Ollie",
     age: "12 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/tr.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/tr.jpg",
   },
   {
     title: "Puppy: Barney",
     age: "9 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/trw.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/trw.jpg",
   },
   {
     title: "Cat: Walter",
     age: "5 Years",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/trg.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/trg.jpg",
   },
   {
     title: "Dog: Miss Sunshine",
     age: "2 Years",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/trj.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/trj.jpg",
   },
   {
     title: "Kitten: Reese",
     age: "8 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/trs.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/trs.jpg",
   },
   {
     title: "Puppy: Bruce",
     age: "10 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/trc.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/trc.jpg",
   },
   {
     title: "Puppy: Bruce",
     age: "10 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/umb.jpg",
+    imageUrl: "assets/Illustratons-and-custom-art/umb.jpg",
   },
   {
     title: "Puppy: Bruce",
     age: "10 Weeks",
-    imageUrl: "../src/assets/Illustratons-and-custom-art/Side.png",
+    imageUrl: "assets/Illustratons-and-custom-art/Side.png",
   },
 ];
 

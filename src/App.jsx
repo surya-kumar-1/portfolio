@@ -13,7 +13,7 @@ import SmCardOne from '../src/components/WorksPage/SmCard-1.jsx';
 import SmCardTwo from '../src/components/WorksPage/SmCard-2.jsx';
 import './App.css';
 import MainIllustration from '../src/components/WorksPage/MainIllustration.jsx';
-import About from '../src/components/HomePage/About.jsx'
+import About from '../src/components/HomePage/About.jsx';
 
 function App() {
     return (
@@ -28,33 +28,33 @@ function App() {
                             title="Brand Identity"
                             description="A brand identity is a set of tools or elements used by a company to create a brand image. A brand image is a customers' perception of the brand consisting of various associations related to it and memories about interacting with it."
                             buttonText="Read Process"
-                            imageSrc="../src/assets/img-1.png"
-                            dappa1='../src/assets/SATIONARY.png'
-                            navigateTo="/enchroma"
+                            imageSrc="portfolio/assets/img-1.png"
+                            dappa1='portfolio/assets/SATIONARY.png'
+                            navigateTo="/portfolio/enchroma"
                         />
                         <Enchroma
                             title="Logofolio"
                             description="A logo is a symbol or design used to identify a company or organization, as well as its products, services, employees, etc"
                             buttonText="Get Started"
-                            imageSrc="../src/assets/img-2.png"
-                            dappa1='../src/assets/logofolio-22.png'
-                            navigateTo="/LamaAi"
+                            imageSrc="portfolio/assets/img-2.png"
+                            dappa1='portfolio/assets/logofolio-22.png'
+                            navigateTo="/portfolio/LamaAi"
                         />
                         <Lama
                             title="Social Media Graphics"
                             description="Social design is the application of design methodologies in order to tackle complex human issues, placing the social issues as the priority"
                             buttonText="Read Process"
-                            imageSrc="../src/assets/img-1.png"
-                            dappa1='../src/assets/smg-22.png'
-                            navigateTo="/SocialMedia"
+                            imageSrc="portfolio/assets/img-1.png"
+                            dappa1='portfolio/assets/smg-22.png'
+                            navigateTo="/portfolio/SocialMedia"
                         />
                         <Enchroma
                             title="Illustration and Custom Art"
                             description="CUSTOM ARTS are made for me according to My wishes."
                             buttonText="Read Process"
-                            imageSrc="../src/assets/img-2.png"
-                            dappa1='../src/assets/healthy-food-amico.png'
-                            navigateTo="/MainIllustration"
+                            imageSrc="portfolio/assets/img-2.png"
+                            dappa1='portfolio/assets/healthy-food-amico.png'
+                            navigateTo="/portfolio/MainIllustration"
                         />
                         <ContactForm />
                         <About />
@@ -62,16 +62,16 @@ function App() {
                 } />
 
                 {/* Route for About Page */}
-                <Route path="/about" element={<MainAbout />} />
-                <Route path="/enchroma" element={<Enchromaai />} />
-                <Route path="/LamaAi" element={<LamaAi />} />
-                <Route path="/SocialMedia" element={<SocialMedia />} />
-                <Route path="/MainIllustration" element={<MainIllustration />} />
-                <Route path="/contact" element={<ContactForm />} />
+                <Route path="/portfolio/about" element={<MainAbout />} />
+                <Route path="/portfolio/enchroma" element={<Enchromaai />} />
+                <Route path="/portfolio/LamaAi" element={<LamaAi />} />
+                <Route path="/portfolio/SocialMedia" element={<SocialMedia />} />
+                <Route path="/portfolio/MainIllustration" element={<MainIllustration />} />
+                <Route path="/portfolio/contact" element={<ContactForm />} />
 
                 {/* Routes for Cards */}
-                <Route path="/first-card" element={<SmCardOne />} />
-                <Route path="/second-card" element={<SmCardTwo />} />
+                <Route path="/portfolio/SocialMedia/first-card" element={<SmCardOne />} />
+                <Route path="/portfolio/SocialMedia/second-card" element={<SmCardTwo />} />
             </Routes>
         </Router>
     );
