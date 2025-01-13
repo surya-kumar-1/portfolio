@@ -32,7 +32,7 @@
     width: 100%; /* Ensures it scales with the container */
     max-width: 400px; /* Restricts max width */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    background-image: url('assets/ab-pro-1.png');
+    background-image: url('ab-pro-1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
