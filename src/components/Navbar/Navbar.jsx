@@ -14,7 +14,7 @@ function Navbar() {
             <div className="navbar">
                 {/* Logo */}
                 <div className="Navlogo">
-                    <Link to="/portfolio"><h3 className="text-1">Surya <span className="kumareh">Kumar</span></h3></Link>
+                    <Link to="/portfolio/"><h3 className="text-1">Surya <span className="kumareh">Kumar</span></h3></Link>
                 </div>
 
                 {/* Hamburger Menu for smaller screens */}
@@ -25,7 +25,7 @@ function Navbar() {
                 {/* Navigation Links */}
                 <div className={`rightside-content ${menuOpen ? 'show' : ''}`}>
                     <ul>
-                        <li className="l-1"><Link to="/portfolio">Home</Link></li>
+                        <li className="l-1"><Link to="/portfolio/">Home</Link></li>
                         <li className="dropdown">
                             Works
                             <i className="fas fa-chevron-down"></i> {/* Down arrow icon */}

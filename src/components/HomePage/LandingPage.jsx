@@ -24,13 +24,13 @@ function LandingPage() {
                 </h1>
                 <div className='animation-images'>
                     <div className='ani-image-1'>
-                        <img src="portfolio/assets/img-3.png" alt="" />
+                        <img src="assets/img-3.png" alt="" />
                     </div>
                     <div className='ani-image-2'>
-                        <img src="portfolio/assets/img-4.png" alt="" />
+                        <img src="assets/img-4.png" alt="" />
                     </div>
                     <div className='ani-image-3'>
-                        <img src="portfolio/assets/img-5.png" alt="" />
+                        <img src="assets/img-5.png" alt="" />
                     </div>
                 </div>
             </div>

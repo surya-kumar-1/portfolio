@@ -28,32 +28,32 @@ function App() {
                             title="Brand Identity"
                             description="A brand identity is a set of tools or elements used by a company to create a brand image. A brand image is a customers' perception of the brand consisting of various associations related to it and memories about interacting with it."
                             buttonText="Read Process"
-                            imageSrc="portfolio/assets/img-1.png"
-                            dappa1='portfolio/assets/SATIONARY.png'
+                            imageSrc="assets/img-1.png"
+                            dappa1='assets/SATIONARY.png'
                             navigateTo="/portfolio/enchroma"
                         />
                         <Enchroma
                             title="Logofolio"
                             description="A logo is a symbol or design used to identify a company or organization, as well as its products, services, employees, etc"
                             buttonText="Get Started"
-                            imageSrc="portfolio/assets/img-2.png"
-                            dappa1='portfolio/assets/logofolio-22.png'
+                            imageSrc="assets/img-2.png"
+                            dappa1='assets/logofolio-22.png'
                             navigateTo="/portfolio/LamaAi"
                         />
                         <Lama
                             title="Social Media Graphics"
                             description="Social design is the application of design methodologies in order to tackle complex human issues, placing the social issues as the priority"
                             buttonText="Read Process"
-                            imageSrc="portfolio/assets/img-1.png"
-                            dappa1='portfolio/assets/smg-22.png'
+                            imageSrc="assets/img-1.png"
+                            dappa1='assets/smg-22.png'
                             navigateTo="/portfolio/SocialMedia"
                         />
                         <Enchroma
                             title="Illustration and Custom Art"
                             description="CUSTOM ARTS are made for me according to My wishes."
                             buttonText="Read Process"
-                            imageSrc="portfolio/assets/img-2.png"
-                            dappa1='portfolio/assets/healthy-food-amico.png'
+                            imageSrc="assets/img-2.png"
+                            dappa1='assets/healthy-food-amico.png'
                             navigateTo="/portfolio/MainIllustration"
                         />
                         <ContactForm />
